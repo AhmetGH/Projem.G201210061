@@ -1,31 +1,15 @@
 
-
 body{
     margin:0;
     background-color: #f1f1f1;
     width: 100%;
 }
 
-#blog-post-container{
-	width: 75%;	
-	float: left;
-}
-.box{
-    background: white;
-margin-bottom: 15px;
-padding: 20px;
-}
-
-.blog-post{
-position: relative;
-}
 
 .menu1{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    padding-left: 5%;
-    padding-right: 5%;
     overflow: hidden;
     background-color: #7abcff;
 }
@@ -40,18 +24,15 @@ position: relative;
     display: block;
     color: rgb(255, 255, 255);
     text-align: center;
-    padding: 5% 109px;
+    padding: 5% 100px;
     text-decoration: none;
 }
-
-.ortala
-{
-text-align: center;
-}
-
-li a:hover{
+.menu4 li a:hover{
     background-color:#1216f3; 
 }
+
+
+
 
 ul li ul {
     background-color:#2c3e50;
@@ -63,6 +44,12 @@ ul li ul {
 ul li:hover ul{
     display:block;
 }
-li ul li {
+
+.menu7 li ul li {
     display:block; 
+}
+
+.ortala
+{
+text-align: center;
 }
