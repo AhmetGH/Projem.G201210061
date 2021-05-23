@@ -2,12 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giriş</title>
+    <style>
+    *{margin:0;padding:0;}
+    body{
+        color:#fff;
+        background-image: url('Tüm-resimler/1889154.jpg');
+        background-position:center;
+        background-repeat:no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+    .duzen{
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        text-align:center;
+        margin:10%;
+    }
+    .renk{
+        color:red;
+    }
+    </style>
 </head>
 <body>
-    <form action ="" method="post">
-        <input type="text" name="a_kullaniciadi" placeholder="Kullanıcı Adı Giriniz">
+    
+    <form action ="" method="post" class="duzen">
+        <h2>Siteme Hoşgeldiniz</h2>
+        <br>
+        <input type="email" name="a_kullaniciadi" placeholder="Kullanıcı Adı Giriniz">
+        <br>
         <input type="password" name="a_sifre" placeholder="Şifrenizi Giriniz">
+        <br>
         <input type="submit" name="gonder" value="Giriş Yap">
 </form>
 </body>
@@ -26,7 +54,9 @@ session_start();
     {
         if(empty($a_kullaniciadi) or empty($a_sifre))
         {
-        echo 'Kullanıcı adı veya Şifre girilmesi zorunludur!';
+            ?>
+            <html><body><h2 class="duzen renk">Kullanıcı adı veya Şifre girilmesi zorunludur!</h2></body></html>
+            <?php
         }
     
     else{
@@ -39,13 +69,17 @@ session_start();
                 header("location:hakkinda.php");
             }
         else
-        { 
-            echo 'Sifre Yanlış';
+        {   
+            ?>
+            <html><body><h2 class="duzen renk">Şifre Yanlış</h2></body></html>
+            <?php
         }
     }
     else
     { 
-        echo 'Kullanıcı Adı Bulunamadı';
+        ?>
+            <html><body><h2 class="duzen renk">Kullanıcı Adı Bulunamadı</h2></body></html>
+            <?php
     }
     }
     }

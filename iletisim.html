@@ -8,7 +8,27 @@
     <title>İletisim</title>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width">
-    <style></style>
+    <style> 
+    * {
+            margin: 0;
+            padding: 0;
+        }
+    body {
+        color: #fff;
+        background-image: url('Tüm-resimler/1889154.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+
+    .duzen {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 5%;
+    }</style>
 </head>
 
 <body>
@@ -26,8 +46,6 @@
 
                 <li><a href="sehrim.html">Ekonomik yapı</a></li>
 
-                <li><a href="sehrim.html">Etkinlikler</a></li>
-
                 <li><a href="sehrim.html">Galeri</a></li>
 
             </ul>
@@ -41,6 +59,38 @@
         <li><a href="iletisim.html">İletişim</a></li>
     </ul>
 
+    <form method="POST" action="goruntu.php" class="duzen" >
+        <input type="text"  placeholder="Adınızı giriniz." name="Ad"><br>
+        <input type="text" placeholder="Soyanızı Giriniz." name="Soyad"><br>
+        <input type="email" placeholder="e-mail giriniz" name="e-mail"><br>
+        <h3>Doğum Tarihi:</h3><input type="date" name="Dogum-tarihi"><br><br>
+        <h3>Cinsiyet:</h3><br><br>
+        <h3>Erkek</h3><input type="radio" name="Cinsiyet">
+        <h3>Kadın</h3><input type="radio" name="Cinsiyet">
+        <h3>Belirtmek istemiyorum.</h3><input type="radio" name="Cinsiyet"><br><br>
+        <h3>Siteyi nasıl buldunuz ?</h3>
+        <h3><select name="sec"></h3>
+        <option value="idare-eder">İdare eder</option>
+        <option value="Gayet-guzel">Gayet güzel</option>
+        <option value="Kotu">Kötü</option>
+        <option value="bilemedim">Bilemedim</option>
+        </select><br><br>
+        <input type="text" size="60" style="height: 100px;" autofocus
+            placeholder="Geliştiriciye ne söylemek istersiniz ?" name="gonderme"><br>
+        <input type=submit value="Gönder">
+        <input type="reset" value="Temizle">
+    </form>
+
+    <!--<script>
+function control(formId)
+{
+    let invalids = document.getElementById(formId).qıertSelectorAll(':invalid').length,
+    button = document.getElementById(formId).querySelector('button[type="submit"]'); 
+
+}
+
+
+</script>-->
 </body>
 
 </html>
