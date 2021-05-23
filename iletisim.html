@@ -15,7 +15,7 @@
         }
     body {
         color: #fff;
-        background-image: url('Tüm-resimler/1889154.jpg');
+        background-image: url('Tüm-resimler/100_1250.jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -59,23 +59,23 @@
         <li><a href="iletisim.html">İletişim</a></li>
     </ul>
 
-    <form method="POST" action="goruntu.php" class="duzen" >
-        <input type="text"  placeholder="Adınızı giriniz." name="Ad"><br>
+    <form method="post" action="goruntu.php" class="duzen" >
+        <input type="text" autofocus placeholder="Adınızı giriniz." name="Ad"><br>
         <input type="text" placeholder="Soyanızı Giriniz." name="Soyad"><br>
-        <input type="email" placeholder="e-mail giriniz" name="e-mail"><br>
-        <h3>Doğum Tarihi:</h3><input type="date" name="Dogum-tarihi"><br><br>
+        <input type="email" placeholder="e-mail giriniz" name="email"><br>
+        <h3>Doğum Tarihi:</h3><input type="date" name="Dogumtarih"><br><br>
         <h3>Cinsiyet:</h3><br><br>
-        <h3>Erkek</h3><input type="radio" name="Cinsiyet">
-        <h3>Kadın</h3><input type="radio" name="Cinsiyet">
-        <h3>Belirtmek istemiyorum.</h3><input type="radio" name="Cinsiyet"><br><br>
+        <h3>Erkek</h3><input type="radio" name="Cinsiyet" value="Erkek">
+        <h3>Kadın</h3><input type="radio" name="Cinsiyet" value="Kadın">
+        <h3>Belirtmek istemiyorum.</h3><input type="radio" name="Cinsiyet" value="Belirsiz"><br><br>
         <h3>Siteyi nasıl buldunuz ?</h3>
         <h3><select name="sec"></h3>
-        <option value="idare-eder">İdare eder</option>
-        <option value="Gayet-guzel">Gayet güzel</option>
-        <option value="Kotu">Kötü</option>
-        <option value="bilemedim">Bilemedim</option>
+        <option name="idareeder">İdare eder</option>
+        <option name="Gayetguzel">Gayet güzel</option>
+        <option name="Kotu">Kötü</option>
+        <option name="bilemedim">Bilemedim</option>
         </select><br><br>
-        <input type="text" size="60" style="height: 100px;" autofocus
+        <input type="text" size="60" style="height: 100px;" 
             placeholder="Geliştiriciye ne söylemek istersiniz ?" name="gonderme"><br>
         <input type=submit value="Gönder">
         <input type="reset" value="Temizle">
